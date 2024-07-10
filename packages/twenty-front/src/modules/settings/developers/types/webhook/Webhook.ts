@@ -1,6 +1,16 @@
-export type Webhook = {
+// export type Webhook = {
+//   id: string;
+//   targetUrl: string;
+//   operation: string;
+//   __typename: 'Webhook';
+  
+// };
+
+export interface Webhook {
   id: string;
-  targetUrl: string;
-  operation: string;
-  __typename: 'Webhook';
-};
+  url: string;
+  filters?: {
+    objects: string[];
+    actions: string[];
+  };
+}
