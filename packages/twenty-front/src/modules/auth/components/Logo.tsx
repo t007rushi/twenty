@@ -10,7 +10,6 @@ const StyledContainer = styled.div`
   height: 48px;
   margin-bottom: ${({ theme }) => theme.spacing(4)};
   margin-top: ${({ theme }) => theme.spacing(4)};
-
   position: relative;
   width: 48px;
 `;
